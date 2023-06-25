@@ -1,5 +1,6 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pf", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>ps", vim.cmd.PackerSync)
 
 -- move selected text up and down with N and E
 vim.keymap.set("v", "N", ":m '<-2<CR>gv=gv")
