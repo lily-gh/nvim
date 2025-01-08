@@ -28,5 +28,3 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 -- replaces current word on the entire file
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
-
-print("Hi from config 🌙")
