@@ -1,9 +1,15 @@
 return {
-  -- local plugin
-  dir = "/home/lily/projects/palette-picker.nvim",
-  name = "palette-picker",
+  "lily-gh/palette-picker.nvim",
+  branch = "main",
 
-  -- load immediately so :PalettePicker exists at startup
+  dependencies = {
+    { "nvim-telescope/telescope.nvim" }
+  },
+
   lazy = false,
+
+  config = function()
+    vim.keymap.set("n", "<leader>p", ":PalettePicker<CR>", {})
+  end,
 }
 
